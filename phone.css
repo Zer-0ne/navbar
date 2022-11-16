@@ -1,0 +1,87 @@
+.sidebar {
+    width: 100%;
+    flex-direction: column;
+    /* position: absolute; */
+    /* top: 0; */
+    transition: all 1s ease;
+    height: 100px;
+    position: sticky;
+    justify-content: space-between;
+}
+.sidebar .logo {
+    justify-content: space-between;
+    /* flex-direction: column; */
+    display: flex;
+    margin: 1rem;
+}
+.sidebar img{
+    width: 60px;
+    display: flex;
+    height: 60px;
+}
+.sidebar .hover{
+    display: none;
+}
+.sidebar .white {
+    /* padding: 1rem; */
+    display: flex;
+    text-align: justify;
+    /* width: 100%; */
+    margin-left: 0rem;
+    /* margin-left: 1.1rem; */
+}
+.sidebar .a {
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* margin: 0.1rem 1rem; */
+    width: 92%;
+}
+.sidebar ul {
+    margin: 2rem 0rem;
+    display: none;
+}
+.sidebar .body {
+    position: static;
+    margin: 2rem 1rem;
+}
+.open ul{
+    display: flex;
+}
+.open .bars a{
+    padding: 1rem;
+}
+.open .body{
+    position: static;
+}
+.logo span{
+    display: flex;
+    justify-content: center;
+    color: white;
+    transition: all 1s ease;
+    font-size: 3.2rem;
+}
+.logo .red{
+    color: red;
+    margin: 0px 5px;
+    /* font-size: 3.5rem; */
+}
+.logo .zerone{
+    display: flex;
+    justify-content: center;
+}
+.open .a{
+    color: black;
+}
+.open .a:hover{
+    color: white;
+    background-color: black;
+}
+@media screen and (max-width: 425px){
+    .logo span{
+        font-size: 7vw;
+        transition: all 1s ease;
+        margin: 1rem 0rem;
+    }
+}

@@ -1,0 +1,175 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    /* background-color: rgb(39, 38, 38); */
+    display: block;
+}
+.logo span{
+    display: none;
+}
+.sidebar {
+    width: 104px;
+    height: 100vh;
+    font-size: 1.5rem;
+    display: flex;
+    position: fixed;
+    background-color: black;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-shadow: 0rem 0rem 1rem black;
+    text-align: center;
+    transition: all 1s ease;
+}
+.sidebar .a {
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* margin: .1rem 1rem; */
+    width: 99%;
+}
+.sidebar .b{
+    padding: 1.3rem;
+}
+.sidebar .bars{
+    margin: 1rem 0rem;
+}
+li{
+    list-style: none;
+}
+a{
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+}
+.sidebar .show{
+    display: none;
+}
+.sidebar .hover {
+    opacity: 0;
+    margin: 0rem 0rem 0rem 2rem;
+    border-radius: 1rem;
+}
+.sidebar img{
+    display: none;
+}
+.sidebar .white {
+    /* padding: 1rem; */
+    display: flex;
+    width: 100%;
+    margin-left: 1.1rem;
+}
+.sidebar ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.sidebar .i{
+   
+        font-size: 2rem;
+        /* margin: 0rem 2rem 0rem 0rem; */
+    
+}
+.sidebar .logo{
+    margin: 1rem 0rem 4rem
+}
+.sidebar li:hover .hover{
+    opacity: 1;
+    color: black;
+    background-color: white;
+    padding: 1rem;
+    transition: all .4s ease;
+}
+.sidebar a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 1rem;
+}
+ .open{
+    width: 321px;
+    transition: all .5s ease;
+}
+.open .show{
+    display: flex;
+    margin: 0rem 1rem;
+}
+.open .hover{
+    display: none;
+}
+.open a{
+    margin: .1rem 2rem;
+    padding: 1.5rem 3rem;
+}
+/* .open li:hover{
+    background-color: white;
+    color: black;
+    transition: all .5s ease;
+    border-radius: 2rem;
+} */
+.open .a:hover{
+    transition: all 0.5s ease;
+    padding: 1.5rem 2rem;
+}
+.open .a{
+    justify-content: flex-start;
+}
+.open .white{
+    margin-left: 0rem;
+}
+.open img{
+    width: 100px;
+    display: flex;
+}
+.open .logo{
+    display: flex;
+    transition: all 1s ease;
+    justify-content: space-between;
+}
+.open .bars{
+    display: flex;
+    margin: 0px 8px;
+    transition: all 1s ease;
+}
+.open .bars a{
+    padding: 2rem;
+    margin: 0px;
+}
+.open .white input{
+    color: white;
+    background-color: rgb(42, 41, 41);
+    border-radius: 1rem;
+    width: 100%;
+    border: 2px solid rgb(42, 41, 41);
+}
+.open #input{
+    border-radius: 2rem;
+    background-color: rgb(42, 41, 41);
+}
+.open #input span{
+    margin-left: 2px;
+    width: 100%;
+}
+.open input:focus{
+    /* border:2px solid rgb(42, 41, 41); */
+    outline: none;
+}
+.open .body{
+    display: flex;
+    width: calc(100%-321px);
+    margin-left: 321px;
+    transition: all 1s ease;
+    position: absolute;
+
+}
+.sidebar .body{
+    display: flex;
+    width: calc(100vw-100px);
+    /* margin-left: 100px; */
+    transition: all 1s ease;
+    position: absolute;
+    left: 150px;
+
+}

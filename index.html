@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/549f321b97.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="phone.css">
+</head>
+
+<body>
+
+    <div class="sidebar ">
+        <div class="logo">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fyt3.ggpht.com%2Fa%2FAGF-l78xJiHYp5-Zbd6eEo1AQd1xmhU8OChFbhGrdg%3Ds900-c-k-c0xffffffff-no-rj-mo&f=1&nofb=1"
+                alt="">
+            <div class="zerone">
+
+                <span>Z E R </span>
+                <span class="red">
+                    O
+                    <!-- <i class="fas fa-power-off"></i> -->
+                </span>
+                <span>N E</span>
+            </div>
+            <div class="bars">
+                <a href="#" class='b' id="btn">
+
+                    <i class="fas fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <ul>
+            <li class="white"><a href="#" class='a ' id="input">
+                    <i class="fas fa-search i bx-search">
+
+                    </i>
+                    <span class="show">
+
+                        <input type="text" placeholder="search">
+                    </span>
+                </a><span class="hover">
+                    Search
+                </span></li>
+            <li class="white"><a href="#" class='a'><i class="fas fa-th-large i"></i><span class="show">
+
+                        Dashboard
+                    </span>
+                </a><span class="hover">
+                    Dashboard
+                </span></li>
+            <li class="white"><a href="#" class='a'><i class="fas fa-users i"></i><span class="show">
+
+                        User
+                    </span>
+                </a><span class="hover">
+                    User
+                </span></li>
+            <li class="white"><a href="#" class='a'><i class="fas fa-comment-alt i"></i><span class="show">
+
+                        Messages
+                    </span>
+                </a><span class="hover">
+                    Messages
+                </span></li>
+            <li class="white"><a href="#" class='a'><i class="fas fa-chart-pie i"></i><span class="show">
+
+                        Analytics
+                    </span>
+                </a><span class="hover">
+                    Analytics
+                </span></li>
+            <li class="white"><a href="#" class='a'><i class="fas fa-folder i"></i><span class="show">
+
+                        File Manager
+                    </span>
+                </a><span class="hover">
+                    File
+                </span></li>
+
+            <li class="white"><a href="#" class='a'><i class="fas fa-shopping-cart i"></i><span class="show">
+
+                        Order
+                    </span>
+                </a><span class="hover">
+                    Order
+                </span></li>
+            <li class="white"><a href="#" class='a'><i class="fas fa-heart i"></i><span class="show">
+
+                        Saved
+                    </span>
+                </a><span class="hover">
+                    Saved
+                </span></li>
+            <li class="white"><a href="#" class='a'><i class="fas fa-cog i"></i><span class="show">
+
+                        Setting
+                    </span>
+                </a><span class="hover">
+                    Setting
+                </span></li>
+        </ul>
+        <!-- <ul class="hide">
+            <li class="hover">Search</li>
+            <li class="hover">Dashboard</li>
+            <li class="hover">User</li>
+            <li class="hover">Messages</li>
+            <li class="hover">Analytics</li>
+            <li class="hover">File Manager</li>
+            <li class="hover">Order</li>
+            <li class="hover">Save</li>
+            <li class="hover">Setting</li>
+        </ul> -->
+        <div class="body">
+            <h1>sahil khan</h1>
+        </div>
+    </div>
+</body>
+<script>
+    let sidebar = document.querySelector(".sidebar ");
+    let closeBtn = document.querySelector("#btn");
+    let searchBtn = document.querySelector(".bx-search");
+
+    closeBtn.addEventListener("click", () => {
+        sidebar.classList.toggle("open");
+        menuBtnChange();//calling the function(optional)
+    });
+
+    searchBtn.addEventListener("click", () => { // Sidebar open when you click on the search iocn
+        sidebar.classList.toggle("open");
+        menuBtnChange(); //calling the function(optional)
+    });
+
+    // following are the code to change sidebar button(optional)
+    function menuBtnChange() {
+        if (sidebar.classList.contains("open")) {
+            closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+        } else {
+            closeBtn.classList.replace("bx-menu-alt-right", "bx-menu");//replacing the iocns class
+        }
+    }
+</script>
+
+</html>
